@@ -8,5 +8,5 @@ How to install
 ======================
 
   cd < script dir >   
-  chmod +x Eclipse-Install.sh   
-  sudo ./Eclipse-Install.sh 
+  chmod +x Aptana-Install.sh   
+  sudo ./Aptana-Install.sh 

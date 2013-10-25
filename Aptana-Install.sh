@@ -7,15 +7,13 @@ MACHINE_TYPE=`uname -m`
 # Checks that the script is running as root, if not
 # it will ask for permissions
 # Source: http://unix.stackexchange.com/a/28796
-if (($EUID != 0)); then
-  if [[ -t 1 ]]; then
-		sudo "$0" "$@"
-	else
-		exec 1>output_file
-		gksu "$0 $@"
-	fi
- 
-	exit
+# Checks that the script is running as root, if not
+# it will ask for permissions
+# Source: http://unix.stackexchange.com/a/28796
+if [ $(id -u) != 0 ]; then
+   echo "This script requires root permissions"
+   sudo "$0" "$@"
+   exit
 fi
 
 

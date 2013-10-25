@@ -7,9 +7,7 @@ MACHINE_TYPE=`uname -m`
 # Checks that the script is running as root, if not
 # it will ask for permissions
 # Source: http://unix.stackexchange.com/a/28796
-# Checks that the script is running as root, if not
-# it will ask for permissions
-# Source: http://unix.stackexchange.com/a/28796
+# Root permissions check from http://askubuntu.com/a/30182
 if [ $(id -u) != 0 ]; then
    echo "This script requires root permissions"
    sudo "$0" "$@"

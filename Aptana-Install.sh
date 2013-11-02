@@ -64,7 +64,7 @@ Icon=aptanastudio3
 Terminal=false
 Type=Application
 MimeType=text/xml;application/xhtml+xml;application/x-javascript;application/x-php;application/x-java;text/x-javascript;text/html;text/plain
-Categories=GNOME;Development;IDE;" >> /tmp/AptanaStudio.desktop
-xdg-desktop-menu install /tmp/AptanaStudio.desktop
+Categories=GNOME;Development;IDE;" >> /tmp/Aptana-Studio.desktop
+xdg-desktop-menu install /tmp/Aptana-Studio.desktop
 
 echo "Aptana Studio 3 has been installed"

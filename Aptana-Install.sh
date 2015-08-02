@@ -21,9 +21,9 @@ echo "Downloading Aptana Studio 3"
 cd /tmp
 
 if [ ${MACHINE_TYPE} == 'x86_64' ]; then
-	wget http://download.aptana.com/studio3/standalone/3.6.0/linux/Aptana_Studio_3_Setup_Linux_x86_64_3.6.0.zip -O AptanaStudio.zip
+	wget https://github.com/aptana/studio3/releases/download/v3.6.1/Aptana_Studio_3_Setup_Linux_x86_64_3.6.1.zip -O AptanaStudio.zip
 else
-	wget http://download.aptana.com/studio3/standalone/3.6.0/linux/Aptana_Studio_3_Setup_Linux_x86_3.6.0.zip -O AptanaStudio.zip
+	wget https://github.com/aptana/studio3/releases/download/v3.6.1/Aptana_Studio_3_Setup_Linux_x86_3.6.1.zip -O AptanaStudio.zip
 fi
 
 
